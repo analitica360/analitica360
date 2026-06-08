@@ -1,0 +1,44 @@
+/* =======================================================================
+   SECCIÓN CONTACTO
+   ======================================================================= */
+.contacto-seccion {
+    padding: 100px 0;
+    background-color: #06152d;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.form-grupo { margin-bottom: 20px; }
+
+.form-grupo input, .form-grupo textarea {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: var(--blanco);
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--cyan);
+    color: var(--azul-oscuro);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover { background-color: var(--blanco); }
+
+@media (max-width: 768px) {
+    .contacto-grid { grid-template-columns: 1fr; gap: 40px; }
+}
